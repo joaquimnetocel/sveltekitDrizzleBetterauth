@@ -1,0 +1,18 @@
+{
+	"recommendations": [
+		"esbenp.prettier-vscode", // PRETTIER
+		"svelte.svelte-vscode", // SVELTE FOR VS CODE
+		"dbaeumer.vscode-eslint", // ESLINT
+		"natqe.reload", // RELOAD
+		"formulahendry.auto-rename-tag", // AUTO RENAME TAG
+		"Chanzhaoyu.svelte-5-snippets", // SVELTE 5 SNIPPETS
+		"mikestead.dotenv", // FORMATAÇÃO PARA ARQUIVO ENV
+
+		// TAILWIND EXTENSIONS:
+		"heybourn.headwind", // HEADWIND
+		"bradlc.vscode-tailwindcss", // TAILWIND CSS INTELLISENSE
+		"csstools.postcss", // POSTCSS LANGUAGE SUPPORT
+		"stivo.tailwind-fold" // TAILWIND FOLD
+		/////
+	]
+}
