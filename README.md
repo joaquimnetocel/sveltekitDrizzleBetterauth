@@ -1,38 +1,38 @@
-# sv
+# DRIZZLE BETTER AUTH
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+- CRIAR PROJETO SVELTEKIT
 
-## Creating a project
+- CONFIGURAR PASTA _.vscode_.
 
-If you're seeing this, you've probably already done this step. Congrats!
+- MUDAR TRAILING COMMA PARA "all" NO _.prettierrc_.
 
-```sh
-# create a new project in the current directory
-npx sv create
+  ```bash
+  npm run format
+  npm run lint
+  ```
 
-# create a new project in my-app
-npx sv create my-app
+- ADICIONAR TAILWIND:
+
+```bash
+npx sv add tailwindcss
 ```
 
-## Developing
+- ADICIONAR DRIZZLE:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+```bash
+npx sv add drizzle
 ```
 
-## Building
+- CRIAR O BANCO DE DADOS _bancoDrizzleBetterauth_ MANUALMENTE.
 
-To create a production version of your app:
+- EDITAR _.env_:
 
-```sh
-npm run build
+```env
+DATABASE_URL="postgres://postgres:password@localhost:5432/bancoDrizzleBetterauth"
 ```
 
-You can preview the production build with `npm run preview`.
+- APLICAR O SCHEMA NO BANCO DE DADOS:
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```bash
+npx drizzle-kit push # OU npm run db:push
+```
