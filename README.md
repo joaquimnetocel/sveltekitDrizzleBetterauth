@@ -1,4 +1,6 @@
-# DRIZZLE BETTER AUTH
+# PROJETO
+
+## SVELTEKIT
 
 - CRIAR PROJETO SVELTEKIT
 
@@ -11,11 +13,15 @@
   npm run lint
   ```
 
+## TAILWIND
+
 - ADICIONAR TAILWIND:
 
 ```bash
 npx sv add tailwindcss
 ```
+
+## DRIZZLE
 
 - ADICIONAR DRIZZLE:
 
@@ -25,7 +31,7 @@ npx sv add drizzle
 
 - CRIAR O BANCO DE DADOS _bancoDrizzleBetterauth_ MANUALMENTE.
 
-- EDITAR _.env_:
+- ARQUIVO _.env_:
 
 ```env
 DATABASE_URL="postgres://postgres:password@localhost:5432/bancoDrizzleBetterauth"
