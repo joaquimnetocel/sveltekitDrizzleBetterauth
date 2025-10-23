@@ -2,11 +2,14 @@
 	import { invalidateAll } from '$app/navigation';
 	import { authClient } from '$lib/betterauth/client';
 	import type { PageProps } from './$types';
+
 	let { data }: PageProps = $props();
+
+	const session = authClient.useSession();
 </script>
 
 <div>
-	{#if data.usuario}
+	{#if $session.data && data.usuario}
 		<div>
 			<p>
 				NOME: {data.usuario.name}
