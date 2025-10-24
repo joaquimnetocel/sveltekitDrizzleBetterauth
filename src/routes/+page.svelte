@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { invalidateAll } from '$app/navigation';
+	// import { invalidateAll } from '$app/navigation';
 	import { authClient } from '$lib/betterauth/client';
 	import type { PageProps } from './$types';
 
@@ -23,7 +23,7 @@
 			<button
 				onclick={async () => {
 					await authClient.signOut();
-					invalidateAll();
+					// invalidateAll();
 				}}
 			>
 				Sign Out
